@@ -1,15 +1,26 @@
 <meta charset="UTF-8">	
 
 <script>
+function pularLinha() { 
+    document.write("<br>");
+    document.write("<br>");
+}
+
+function mostra (frase) {
+    document.write(frase);
+    pularLinha();
+}
 
 var ano = 2016;
+ 
+ mostra("agenda");
 
-document.write("Júlio tem " + ( ano - 1977) + " anos");
-document.write("<br>");	
-document.write("Sandra tem " + ( ano - 1996) + " anos");
-document.write("<br>");
+mostra("Júlio tem " + ( ano - 1977) + " anos");
+
+mostra("Sandra tem " + ( ano - 1996) + " anos");
 
 ano = 2017;
-document.write("Joao tem " + ( ano - 1976) + " anos");
-document.write ("<br>");
-</script>
+
+mostra("Joao tem " + ( ano - 1976) + " anos");
+
+</script>;
